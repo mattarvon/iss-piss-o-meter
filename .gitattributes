@@ -1,0 +1,14 @@
+# Normalize line endings per platform so scripts run correctly everywhere.
+* text=auto
+
+# Windows-hosted scripts want CRLF
+*.ps1      text eol=crlf
+*.cmd      text eol=crlf
+
+# Unix/macOS scripts MUST be LF (CRLF breaks the shebang / bash)
+*.sh       text eol=lf
+*.command  text eol=lf
+*.swift    text eol=lf
+
+# Binary
+*.png      binary

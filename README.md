@@ -1,13 +1,23 @@
 # ISS PISS-O-METER 🛰️🟡
 
-A lightweight Windows **system-tray** gauge showing how full the International
-Space Station's **urine tank** is, live, from NASA's public ISS telemetry feed.
+A lightweight desktop gauge showing how full the International Space Station's
+**urine tank** is, live, from NASA's public ISS telemetry feed.
 
-The tray icon (right next to your clock) is a little piss tank that fills up
-with amber liquid as the real tank fills. Click it for a big gauge with the
-exact percentage and status.
+A little piss tank that fills up with amber liquid as the real tank fills, sat
+right next to your clock — in the Windows **system tray** or the macOS **menu
+bar**. Click it for the exact percentage and status.
 
 ![preview](preview.png)
+
+## Platforms
+
+| OS | Location | App |
+|----|----------|-----|
+| **Windows** | system tray (notification area) | [`IssPissOMeter.ps1`](IssPissOMeter.ps1) — see below |
+| **macOS** | menu bar | [`macos/`](macos/) — Swift/AppKit, see [macos/README.md](macos/README.md) |
+
+Both read the same live feed and draw the same tank; the rest of this file
+covers the Windows version.
 
 ## Run it
 

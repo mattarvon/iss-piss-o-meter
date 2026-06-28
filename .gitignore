@@ -1,0 +1,9 @@
+# Build artifacts — this app ships as a script (Smart App Control blocks unsigned .exe).
+*.exe
+*.dll
+*.pdb
+
+# OS / editor cruft
+Thumbs.db
+desktop.ini
+.vs/
